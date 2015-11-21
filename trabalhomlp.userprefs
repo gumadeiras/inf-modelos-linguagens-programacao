@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\Cristiano\Documents\GitHub\trabalhomlp\Assets\Scripts\MatrixForm.cs">
+    <Files>
+      <File FileName="Assets\Scripts\ShipController.cs" Line="63" Column="2" />
+      <File FileName="Assets\Scripts\BlockControl.cs" Line="18" Column="15" />
+      <File FileName="c:\Users\Cristiano\Documents\GitHub\trabalhomlp\Assets\Scripts\MatrixForm.cs" Line="76" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

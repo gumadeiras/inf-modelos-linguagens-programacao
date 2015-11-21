@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: fdffccd6ab955c74ea73fad0f9e98505
+timeCreated: 1447794175
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: consazon
+    100002: consban1
+    100004: consban2
+    100006: consban3
+    100008: consban4
+    100010: consban5
+    100012: consblak
+    100014: consblan
+    100016: conscano
+    100018: conscue2
+    100020: consgold
+    100022: consmaba
+    100024: consmade
+    100026: consmapo
+    100028: consmaro
+    100030: conspoca
+    100032: //RootNode
+    100034: constras
+    100036: conswhit
+    400000: consazon
+    400002: consban1
+    400004: consban2
+    400006: consban3
+    400008: consban4
+    400010: consban5
+    400012: consblak
+    400014: consblan
+    400016: conscano
+    400018: conscue2
+    400020: consgold
+    400022: consmaba
+    400024: consmade
+    400026: consmapo
+    400028: consmaro
+    400030: conspoca
+    400032: //RootNode
+    400034: constras
+    400036: conswhit
+    2300000: consazon
+    2300002: consban1
+    2300004: consban2
+    2300006: consban3
+    2300008: consban4
+    2300010: consban5
+    2300012: consblak
+    2300014: consblan
+    2300016: conscano
+    2300018: conscue2
+    2300020: consgold
+    2300022: consmaba
+    2300024: consmade
+    2300026: consmapo
+    2300028: consmaro
+    2300030: conspoca
+    2300032: constras
+    2300034: conswhit
+    3300000: consazon
+    3300002: consban1
+    3300004: consban2
+    3300006: consban3
+    3300008: consban4
+    3300010: consban5
+    3300012: consblak
+    3300014: consblan
+    3300016: conscano
+    3300018: conscue2
+    3300020: consgold
+    3300022: consmaba
+    3300024: consmade
+    3300026: consmapo
+    3300028: consmaro
+    3300030: conspoca
+    3300032: constras
+    3300034: conswhit
+    4300000: consazon
+    4300002: consban1
+    4300004: consban2
+    4300006: consban3
+    4300008: consban4
+    4300010: consban5
+    4300012: consblak
+    4300014: consblan
+    4300016: conscano
+    4300018: conscue2
+    4300020: consgold
+    4300022: consmaba
+    4300024: consmade
+    4300026: consmapo
+    4300028: consmaro
+    4300030: conspoca
+    4300032: constras
+    4300034: conswhit
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
