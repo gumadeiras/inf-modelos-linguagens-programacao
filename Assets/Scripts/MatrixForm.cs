@@ -8,14 +8,31 @@ public class MatrixForm: MonoBehaviour {
 	public int columns;
 	public GameObject matrixUnity;
 	public List<GameObject> block;
+	public List<GameObject> block2;
+
+	private int max ;
+	private int min = 0;
+	public int shots = 0;
 
 	void Start(){
-		
+		max = lines * columns;
+
 		//Instantiate Objects
 		for (int i = 0; i < lines*columns; i++) {
 			GameObject tempBuild = Instantiate(matrixUnity) as GameObject;
 			block.Add(tempBuild);
 			tempBuild.SetActive(true);
+			BlockControl bc = block[i].GetComponent<BlockControl>();
+			bc.aiblock = false;
+
+		}
+
+		for (int i = 0; i < lines*columns; i++) {
+			GameObject tempBuild2 = Instantiate(matrixUnity) as GameObject;
+			block2.Add(tempBuild2);
+			tempBuild2.SetActive(true);
+
+
 		}
 
 		//Define matrix position
@@ -28,7 +45,46 @@ public class MatrixForm: MonoBehaviour {
 				c++;
 			}
 		}
-	
+		c = 0;
+
+		for(int j = 0; j < columns; j++){
+			for (int i = 0; i < lines; i++) {
+				if( c != 0)
+				block2 [c].transform.position = new Vector3 (block2 [0].transform.position.x - i, 
+				                                            block2 [0].transform.position.y - j , 0);
+
+				else 
+					block2 [c].transform.position = new Vector3 (-5 +block2 [0].transform.position.x - i, 
+					                                             block2 [0].transform.position.y - j , 0);
+
+			
+				c++;
+			}
+		}
 	}
+
+
+	public void CompareShot(){
+
+		ClickResponse cr =  block2 [Random.Range(min, max)].gameObject.GetComponent<ClickResponse> ();
+		BlockControl bc =  block2 [Random.Range(min, max)].gameObject.GetComponent<BlockControl> ();
+		shipManager sm = GameObject.Find("ShipManager").GetComponent<shipManager>();
+		if (bc.shottedd == false) {
+			bc.shottedd = true;
+			shots ++;
+			bc.Shot ();
+
+
+			if (bc.busyBlock == true) {	
+				sm.shipShots -= 1;
+			}
+		} else if(shots != 25) {
+		
+			CompareShot();
+		} 
+
+	}
+
+
 
 }

@@ -2,13 +2,25 @@
 using System.Collections;
 
 public class ClickResponse : MonoBehaviour {
+
+	public bool shotted;
 	public Animator anim;
-	private bool shotted;
+
+
+	void Awawke(){
+		shotted = false;
+	}
 
 	void OnMouseDown(){
-		anim.Play("explosionAnim");
-		shotted = true;
+	//	Shot ();
 
 	}
+
+	public void Shot(){
+		anim.Play("explosionAnim");
+		shotted = true;
+	}
+
+
 
 }
