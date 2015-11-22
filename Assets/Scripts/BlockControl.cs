@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class BlockControl : MonoBehaviour {
 
@@ -27,15 +28,20 @@ public class BlockControl : MonoBehaviour {
 	}
 
 	public void Shot(){
+		Func<int,int,int> Adiciona = (x,y) => x+y;
+		Func<int,Func<int,int>> curryInt = Lambda.Curry(Adiciona);
+		Func<int,int> decrementaUm = curryInt(-1);
+
+		shipManager sm = GameObject.Find("ShipManager").GetComponent<shipManager>();
 		AudioSource.PlayClipAtPoint (explosion, new Vector3 (0, 0, 0));
 		anim.Play("explosionAnim");
 		shotted = true;
 		if (busyBlock == 1 && aiblock == false) {
-			shipManager sm = GameObject.Find("ShipManager").GetComponent<shipManager>();
-			sm.shipShotsIA -= 1;
+			sm.shipShotsIA = decrementaUm(sm.shipShotsIA);
 		}
 		gameObject.GetComponent<BoxCollider2D>().enabled = false;
 		Invoke ("SetFalse", 1.8f);
+
 	}
 
 	public void SetFalse(){

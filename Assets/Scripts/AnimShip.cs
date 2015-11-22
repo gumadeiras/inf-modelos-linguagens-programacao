@@ -22,4 +22,6 @@ public class AnimShip : MonoBehaviour {
 		if (transform.position.x < minposX)
 			gameObject.transform.position = new Vector3 (maxposX, gameObject.transform.position.y, gameObject.transform.position.z);
 	}
+
+	
 }

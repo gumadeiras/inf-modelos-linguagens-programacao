@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class shipManager : MonoBehaviour {
 
@@ -10,17 +11,38 @@ public class shipManager : MonoBehaviour {
 	public int shipShots;
 	public int shipShotsIA;
 
+	public string totalShots;
+	public int totalShotsIA;
+
 	public GameObject win;
 	public GameObject lose;
 
 	public GameObject block;
+	
+	public TextMesh points;
+	public TextMesh pointsIA;
 
+	public TextMesh shots;
+	public TextMesh shotsIA;
 	void Start (){
+
+		Func<string,string,string> concatena = (x,y) => x+y;
+		Func<string,Func<string,string>> curryString = Lambda.Curry(concatena);
+		Func<string,string> concatenaCom = curryString("Rodada");
+
+
+		totalShotsIA = 1;
+		totalShots = concatenaCom(":");
 		shipShots = 9;
 		shipShotsIA = 9;
 	}
 
 	void Update () {
+
+		points.text = shipShots.ToString ();
+		pointsIA.text = shipShotsIA.ToString ();
+		shots.text = totalShots;
+		shotsIA.text = totalShotsIA.ToString ();
 
 		if (Input.GetKeyDown (KeyCode.Return) && shipCount < maxShips) {
 			SpawnShip();

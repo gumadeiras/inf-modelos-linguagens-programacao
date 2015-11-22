@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class MatrixForm: MonoBehaviour {
 	int c = 0;
@@ -65,8 +66,13 @@ public class MatrixForm: MonoBehaviour {
 
 
 	public void CompareShot(){
+
+		Func<int,int,int> Adiciona = (x,y) => x+y;
+		Func<int,Func<int,int>> curryInt = Lambda.Curry(Adiciona);
+		Func<int,int> decrementaUm = curryInt(-1);
+		Func<int,int> incrementaUm = curryInt(1);
 		
-		BlockControl bc =  block2 [Random.Range(min, max)].gameObject.GetComponent<BlockControl> ();
+		BlockControl bc =  block2 [UnityEngine.Random.Range(min, max)].gameObject.GetComponent<BlockControl> ();
 		shipManager sm = GameObject.Find("ShipManager").GetComponent<shipManager>();
 		if (bc.shottedd == false) {
 			bc.shottedd = true;
@@ -74,8 +80,11 @@ public class MatrixForm: MonoBehaviour {
 			bc.Shot ();
 
 
+			sm.totalShotsIA = incrementaUm(sm.totalShotsIA);
+
 			if (bc.busyBlock == 1) {	
-				sm.shipShots -= 1;
+				sm.shipShots = decrementaUm(sm.shipShots);
+
 			}
 		} else if(shots != 25) {
 			CompareShot();
