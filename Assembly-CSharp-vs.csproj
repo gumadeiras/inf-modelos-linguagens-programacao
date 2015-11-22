@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{287E4160-2FD6-880B-D903-A3C2518EFBA0}</ProjectGuid>
+	<ProjectGuid>{5A0A6FFB-DA82-2D60-3F96-2A7AACE1174F}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\BlockControl.cs" />
      <Compile Include="Assets\Scripts\Button.cs" />
      <Compile Include="Assets\Scripts\GridObject.cs" />
+     <Compile Include="Assets\Scripts\Lambda.cs" />
      <Compile Include="Assets\Scripts\MatrixForm.cs" />
      <Compile Include="Assets\Scripts\ShipController.cs" />
      <Compile Include="Assets\Scripts\shipManager.cs" />
@@ -73,7 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{FE07215B-5BBA-806A-6E2B-2735A0CE4AA9}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{A062F7BC-FC50-080C-1F90-6B79D9C10239}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

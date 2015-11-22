@@ -39,8 +39,8 @@ public class shipManager : MonoBehaviour {
 
 	void Update () {
 
-		points.text = shipShots.ToString ();
-		pointsIA.text = shipShotsIA.ToString ();
+		points.text = shipShots.ToString () + "/9";
+		pointsIA.text = shipShotsIA.ToString () + "/9";
 		shots.text = totalShots;
 		shotsIA.text = totalShotsIA.ToString ();
 
